@@ -65,6 +65,7 @@ Point
 **ImageLoader**虽然已经停止维护了，但是仍然比较好用，图片加载不多的场景下推荐使用。
 
 **Glide**在**Picasso**基础上二次开发而来，沿袭了Picasso以往的简洁风格，并做了大量优化。
+
 |Glide Vs Picasso|Glide|Picasso|
 |----|-----|-------|
 |图片格式|默认RGB_565，支持动态图|默认RGB_ARGB_8888，不支持动态图|
