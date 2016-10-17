@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_item_single_choice"
+                android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/list_cell_text_dialog"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/global_dialog_padding"
+            android:layout_marginRight="@dimen/global_dialog_padding"
+            android:layout_toLeftOf="@+id/rb_select"
+            android:text="This is item"/>
+
+        <RadioButton
+            android:id="@+id/rb_select"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/global_dialog_padding"
+            android:button="@drawable/btn_radio_selector"
+            android:clickable="false"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_divider"
+        style="@style/list_cell_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/content"
+        android:layout_marginLeft="@dimen/global_dialog_padding"
+        android:layout_marginRight="@dimen/global_dialog_padding"
+        android:visibility="visible"/>
+
+</RelativeLayout>

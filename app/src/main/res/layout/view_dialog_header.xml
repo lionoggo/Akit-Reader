@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:minHeight="60.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="18.0dip"
+        android:paddingLeft="@dimen/global_dialog_padding"
+        android:paddingRight="@dimen/global_dialog_padding"
+        android:paddingTop="@dimen/global_dialog_padding">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/button_well"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/subtitle_tv"
+            style="@style/dialog_subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/title_divder"
+        style="@style/dialog_divider"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/global_dialog_padding"
+        android:layout_marginRight="@dimen/global_dialog_padding"/>
+
+</merge>

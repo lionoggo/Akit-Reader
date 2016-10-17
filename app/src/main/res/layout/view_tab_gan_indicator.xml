@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tab_height"
+        android:layout_centerInParent="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone"/>
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_media_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tab_height"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="32323"
+        android:textColor="@color/tab_sliding"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="visible"/>
+
+    <!--右上角数字角标-->
+    <TextView
+        android:id="@+id/tv_unread_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="33"
+        android:gravity="center"
+        android:layout_alignRight="@id/tv_media_name"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:background="@drawable/tab_notification_bg"
+        android:visibility="gone"/>
+</RelativeLayout>

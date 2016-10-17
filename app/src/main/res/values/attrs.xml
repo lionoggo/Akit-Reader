@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!---->
+    <attr name="gBackgroundColor" format="color|reference"/>
+
+    <attr name="gBorderSize" format="dimension"/>
+
+    <attr name="gFont" format="string"/>
+    <attr name="gCornerRadius" format="dimension"/>
+    <attr name="gCornerRadiusTL" format="dimension"/>
+    <attr name="gCornerRadiusTR" format="dimension"/>
+    <attr name="gCornerRadiusBL" format="dimension"/>
+    <attr name="gCornerRadiusBR" format="dimension"/>
+
+    <attr name="gTouchColor" format="color"/>
+    <attr name="gTouchCornerRadius" format="dimension"/>
+    <attr name="gTouchCornerRadiusTL" format="dimension"/>
+    <attr name="gTouchCornerRadiusTR" format="dimension"/>
+    <attr name="gTouchCornerRadiusBL" format="dimension"/>
+    <attr name="gTouchCornerRadiusBR" format="dimension"/>
+    <attr name="gTouchDurationRate" format="float"/>
+    <attr name="gTouchEffect" format="integer">
+        <enum name="none" value="0"/>
+        <enum name="auto" value="1"/>
+        <enum name="ease" value="2"/>
+        <enum name="press" value="3"/>
+        <enum name="ripple" value="4"/>
+    </attr>
+
+    <attr name="gLoadingStyle" format="reference"/>
+    <declare-styleable name="Loading">
+        <attr name="gBackgroundLineSize" format="dimension"/>
+        <attr name="gForegroundLineSize" format="dimension"/>
+        <attr name="gBackgroundColor"/>
+        <attr name="gForegroundColor" format="reference|color"/>
+        <attr name="gLineStyle">
+            <enum name="circle" value="1"/>
+            <enum name="line" value="2"/>
+        </attr>
+        <attr name="gAutoRun" format="boolean"/>
+        <attr name="gProgressFloat" format="float"/>
+    </declare-styleable>
+
+    <!-- ImageView -->
+    <attr name="gImageViewStyle" format="reference"/>
+    <declare-styleable name="ImageView">
+        <attr name="gTouchColor"/>
+        <attr name="gTouchEffect"/>
+        <attr name="gTouchCornerRadius"/>
+        <attr name="gTouchCornerRadiusTL"/>
+        <attr name="gTouchCornerRadiusTR"/>
+        <attr name="gTouchCornerRadiusBL"/>
+        <attr name="gTouchCornerRadiusBR"/>
+        <attr name="gTouchDurationRate"/>
+    </declare-styleable>
+
+</resources>

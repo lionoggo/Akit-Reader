@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">师父说</string>
+
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="tip_load_data_error">对不起,无法加载数据.</string>
+
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">没有更多了</string>
+    <string name="main_tab_meizhi1">微信精选</string>
+    <string name="main_tab_meizhi2">今日干货</string>
+    <string name="main_tab_meizhi3">设置</string>
+    <string name="update_checking">正在检查更新...</string>
+    <string name="update_now">更新</string>
+    <string name="update_delay">暂不更新</string>
+    <string name="update_notice">有新版本</string>
+    <string name="update_no_new">已经是新版本了</string>
+    <string name="update_check_error">网络异常，无法获取新版本信息</string>
+    <string name="setting_clear_cache">确定要清除缓存？</string>
+    <string name="error_invalid_client">非法客户端</string>
+    <string name="error_no_internet">无网络连接</string>
+    <string name="error_other">自定义错误</string>
+    <string name="error_unknown">发生了一点问题，稍后再试</string>
+    <string name="error_service">服务不可用</string>
+    <string name="tip_click_back_again_to_exist">再按一次退出</string>
+</resources>

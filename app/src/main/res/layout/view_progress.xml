@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/progress_custom_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/spinnerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/load_spinner"/>
+
+    <TextView
+        android:id="@+id/waiting_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Message"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

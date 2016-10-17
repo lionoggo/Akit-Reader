@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#eb4f38</color>
+
+    <color name="main_red">#f94848</color>
+    <color name="main_red_80">#aef94848</color>
+    <color name="main_red_50">#77f94848</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_black">#353535</color>
+    <color name="main_purple">#576B95</color>
+    <color name="actionbar_background">@color/main_red</color>
+    <color name="window_background">#EBEBEB</color>
+    <color name="primarybar_background">#FCFCFC</color>
+
+    <!--分割线颜色-->
+    <color name="primarybar_split_color">#D6D6D6</color>
+    <color name="tab_text_gray">#999999</color>
+
+    <color name="list_divider_color">#DADADA</color>
+    <color name="list_item_background_normal">#ffffff</color>
+    <color name="list_item_background_pressed">#F1F1F1</color>
+
+    <color name="actionbar_item_background_normal">@color/transparent</color>
+    <color name="actionbar_item_background_pressed">#30ffffff</color>
+
+    <color name="tab_selected_strip">@color/main_red</color>
+    <color name="tab_strip_text_selected">@color/main_red</color>
+    <color name="tab_strip_text_unselected">@color/main_black</color>
+    <color name="tab_strip_background">#66fafafa</color>
+    <color name="split_line_grey_color_d9d9d9">#ffd9d9d9</color>
+
+    <color name="main_link_text_color">#ff507daf</color>
+    <color name="timeline_clickable_text_highlighted_background">#ffbedfff</color>
+
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+
+
+    <color name="text_main_dark">#6D6B6C</color>
+    <color name="text_main_green">@color/green</color>
+
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+
+    <color name="white40">#40FFFFFF</color>
+    <color name="white60">#95ffffff</color>
+    <color name="white80">#cfffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="gray_10">#6D6B6C</color>
+    <color name="gray">#808080</color>
+    <color name="gray_20">#C0BFC5</color>
+    <color name="gray_40">#D0D0D2</color>
+    <color name="gray_80">#E7E7E7</color>
+
+
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="green_20">#54D314</color>
+    <color name="blue">#0000FF</color>
+    <color name="bg_capture">#5E84E2</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="ornage_40">#FFA51B</color>
+    <color name="ornage_80">#F9B854</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+
+    <color name="head_text">#0e5986</color>
+    <color name="author_text">#0e5986</color>
+
+    <color name="face_bg">#eef1f4</color>
+
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+
+    <color name="weight_bar_buttondown">#63A3D7</color>
+    <color name="weight_bar_buttonup">#A4A9AE</color>
+
+    <color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_white">#ffffffff</color>
+    <color name="listitem_blue">#0e5986</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="listitem_green">#ffe3ffc6</color>
+    <color name="listitem_greenyellow">#ff87b869</color>
+    <color name="listitem_yellow">#fffaffbf</color>
+    <color name="fff1f2f3">#fff1f2f3</color>
+    <color name="ff40ab54">#ff40ab54</color>
+
+    <!-- 二维码扫描颜色值 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#939393</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="theme_primary">#3f51b5</color>
+    <color name="theme_primary_dark">#ffcc0000</color>
+    <color name="theme_primary_light">#7986cb</color>
+    <color name="theme_accent_2">#e91e63</color>
+
+    <color name="cyan_500">#00bcd4</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="blue_500">#5677fc</color>
+    <color name="orange_500">#ff9800</color>
+    <color name="pink_500">#e91e63</color>
+    <color name="grey_300">#e0e0e0</color>
+
+    <color name="g_default_loading_bg">@color/grey_300</color>
+
+
+    <array name="g_default_loading_fg">
+        <item>@color/cyan_500</item>
+        <item>@color/purple_500</item>
+        <item>@color/blue_500</item>
+        <item>@color/orange_500</item>
+        <item>@color/pink_500</item>
+    </array>
+</resources>

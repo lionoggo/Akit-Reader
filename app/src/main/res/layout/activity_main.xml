@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                                        android:id="@+id/container"
+                                                                                        android:layout_width="match_parent"
+                                                                                        android:layout_height="match_parent"
+                                                                                        android:background="@color/window_background"
+                                                                                        android:paddingBottom="55dp">
+
+            <LinearLayout
+                android:id="@+id/pager_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical"
+                >
+
+
+                <FrameLayout
+                    android:id="@+id/realtabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!--顶部头-->
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/actionBar"
+                    layout="@layout/view_actionbar_default"/>
+
+
+            </LinearLayout>
+        </com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout>
+
+        <!--底部tabhost-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:background="@color/primarybar_background">
+
+            <android.support.v4.app.FragmentTabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0"/>
+            </android.support.v4.app.FragmentTabHost>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/primarybar_split_color"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

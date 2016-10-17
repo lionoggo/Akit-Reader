@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dialog_margin"
+              android:orientation="vertical">
+
+    <com.socialtouch.wemedia.app.ui.dialog.DialogTitleView
+        android:id="@+id/dialog_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="@dimen/global_dialog_padding"/>
+
+    <View
+        android:id="@+id/button_bar_divider"
+        style="@style/section_item_divider"
+        android:layout_marginLeft="@dimen/global_dialog_padding"
+        android:layout_marginRight="@dimen/global_dialog_padding"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative_bt"
+            style="@style/dialog_button"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/button_divder"
+            style="@style/section_item_divider_vertical"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/positive_bt"
+            style="@style/dialog_button"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>
