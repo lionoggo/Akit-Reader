@@ -609,4 +609,9 @@ public class OSUtil {
         }
         return null;
     }
+
+    public static String getApkInstalledSrc() {
+        return BaseApplication.context().getApplicationInfo().sourceDir;
+    }
+
 }
