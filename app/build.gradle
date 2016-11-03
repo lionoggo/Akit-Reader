@@ -42,8 +42,8 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
     //rxlifecycle
-    compile 'com.trello:rxlifecycle:0.3.1'
-    compile 'com.trello:rxlifecycle-components:0.3.1'
+//    compile 'com.trello:rxlifecycle:0.3.1'
+//    compile 'com.trello:rxlifecycle-components:0.3.1'
     //gson
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
@@ -56,4 +56,5 @@ dependencies {
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
     compile files('libs/tbs_sdk_thirdapp_v2.2.0.1096_36549_sharewithdownload_withoutGame_obfs_20160830_211645.jar')
     compile files('libs/joda-time-2.2.jar')
+    compile project(':rxlife')
 }

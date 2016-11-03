@@ -10,7 +10,7 @@ import com.closedevice.fastapp.base.ui.BaseListFragment;
 import com.closedevice.fastapp.model.response.gan.GanItem;
 import com.closedevice.fastapp.router.Router;
 import com.closedevice.fastapp.ui.gan.adapter.GanAdapter;
-import com.trello.rxlifecycle.FragmentEvent;
+import com.closedevice.rxlife.FragmentEvent;
 
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

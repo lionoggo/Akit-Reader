@@ -23,7 +23,7 @@ import com.closedevice.fastapp.view.dialog.CommonToast;
 import com.closedevice.fastapp.view.dialog.DialogHelper;
 import com.closedevice.fastapp.view.dialog.IDialog;
 import com.closedevice.fastapp.view.dialog.WaitDialog;
-import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
+import com.closedevice.rxlife.RxAppCompatActivity;
 
 import butterknife.ButterKnife;
 

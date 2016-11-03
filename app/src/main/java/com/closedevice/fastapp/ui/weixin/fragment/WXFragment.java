@@ -13,7 +13,7 @@ import com.closedevice.fastapp.model.ReadRecordRealm;
 import com.closedevice.fastapp.model.response.wx.WXItem;
 import com.closedevice.fastapp.router.Router;
 import com.closedevice.fastapp.ui.weixin.adapter.WXAdapter;
-import com.trello.rxlifecycle.FragmentEvent;
+import com.closedevice.rxlife.FragmentEvent;
 
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

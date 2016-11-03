@@ -11,7 +11,7 @@ import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.base.inter.IBaseFragment;
 import com.closedevice.fastapp.view.dialog.IDialog;
 import com.closedevice.fastapp.view.dialog.WaitDialog;
-import com.trello.rxlifecycle.components.support.RxFragment;
+import com.closedevice.rxlife.RxFragment;
 
 
 public class BaseFragment extends RxFragment implements
