@@ -12,7 +12,7 @@ extern "C" {
  * Method:    patch
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
  */
-JNIEXPORT jintJNICALL Java_com_closedevice_fastapp_util_BsPatchUtil_patch
+JNIEXPORT jint JNICALL Java_com_closedevice_fastapp_util_BsPatchUtil_patch
         (JNIEnv *, jclass, jstring, jstring, jstring);
 
 #ifdef __cplusplus
