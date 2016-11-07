@@ -24,7 +24,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-*.apk
+#*.apk
 *.ap_
 *.dex
 *.class

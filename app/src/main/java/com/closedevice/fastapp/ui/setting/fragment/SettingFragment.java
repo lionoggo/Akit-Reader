@@ -2,6 +2,7 @@ package com.closedevice.fastapp.ui.setting.fragment;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,20 +18,25 @@ import com.closedevice.fastapp.base.ui.BaseFragment;
 import com.closedevice.fastapp.cache.CacheCleanManager;
 import com.closedevice.fastapp.db.RealmHelper;
 import com.closedevice.fastapp.router.Router;
+import com.closedevice.fastapp.util.BsPatchUtil;
+import com.closedevice.fastapp.util.LogUtils;
 import com.closedevice.fastapp.util.OSUtil;
-import com.closedevice.fastapp.util.UpdateManager;
 import com.closedevice.fastapp.view.dialog.DialogHelper;
 
 import java.io.File;
+import java.io.IOException;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
+import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action0;
 import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
+import rx.subscriptions.CompositeSubscription;
 
 public class SettingFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener {
     @Bind(R.id.ll_setting_like_read)
@@ -148,7 +154,8 @@ public class SettingFragment extends BaseFragment implements CompoundButton.OnCh
                 showClearDialog();
                 break;
             case R.id.ll_setting_update:
-                new UpdateManager(getActivity(), true).checkUpdate();
+//                new UpdateManager(getActivity(), true).checkUpdate();
+                smartupdate();
                 break;
         }
     }
@@ -168,6 +175,67 @@ public class SettingFragment extends BaseFragment implements CompoundButton.OnCh
             }
         }).show();
     }
+
+
+    private void smartupdate() {
+        Observable.create(new Observable.OnSubscribe<File>() {
+            @Override
+            public void call(Subscriber<? super File> subscriber) {
+                File newApk = new File(Environment.getExternalStorageDirectory(), "newApk.apk");
+                File patch = new File(Environment.getExternalStorageDirectory(), "patch.patch");
+                if (!patch.exists()) {
+                    subscriber.onError(new IOException("patch file not exist!"));
+                    return;
+                }
+                BsPatchUtil.patch(OSUtil.getApkInstalledSrc(), newApk.getAbsolutePath(), patch.getAbsolutePath());
+                if (newApk.exists()) {
+                    subscriber.onNext(newApk);
+                    subscriber.onCompleted();
+                    patch.delete();
+                } else {
+                    subscriber.onError(new IOException("bspatch failed,file not exist!"));
+                }
+
+
+            }
+        }).subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .doOnSubscribe(new Action0() {
+                    @Override
+                    public void call() {
+                        showDialog("正在应用差分包");
+                    }
+                })
+                .subscribe(new Subscriber<File>() {
+                    @Override
+                    public void onCompleted() {
+                        hideDialog();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        hideDialog();
+                        LogUtils.d(e.getMessage());
+                    }
+
+                    @Override
+                    public void onNext(File file) {
+                        OSUtil.installAPK(getActivity(), file);
+                    }
+                });
+
+        CompositeSubscription subscriptions = new CompositeSubscription();
+
+
+        subscriptions.add();
+
+
+        subscriptions.unsubscribe();
+
+    }
+
+
+
 
 
 }
