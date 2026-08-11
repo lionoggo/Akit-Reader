@@ -39,7 +39,6 @@ public class DetailFragment extends BaseFragment {
     private String url;
     private String mTitle;
     private String mPicUrl;
-    private String mCtime;
     private String mFrom;
     private Boolean isLiked;
 
@@ -147,7 +146,6 @@ public class DetailFragment extends BaseFragment {
         Bundle args = getArguments();
         url = args.getString("url");
         oldUrl = url;
-        mCtime = args.getString("ctime");
         mFrom = args.getString("from");
         mTitle = args.getString("title");
         mPicUrl = args.getString("picUrl");
@@ -184,7 +182,6 @@ public class DetailFragment extends BaseFragment {
             if (realmHelper.findLikeRecord(mTitle) == null) {
                 LikeRecordRealm record = new LikeRecordRealm();
                 record.setId(url);
-                record.setImage(mCtime);
                 record.setImage(mPicUrl);
                 record.setTitle(mTitle);
                 realmHelper.addLikeRecord(record);

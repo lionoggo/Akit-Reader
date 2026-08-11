@@ -61,7 +61,7 @@ public class Router {
         bundle.putString("url", url);
         bundle.putString("picUrl", picUrl);
         bundle.putString("from", from);
-        bundle.putString("ctime", from);
+        bundle.putString("ctime", ctime);
 
         showSimpleBack(activity, SimpleBackPage.DETAIL, bundle);
     }
